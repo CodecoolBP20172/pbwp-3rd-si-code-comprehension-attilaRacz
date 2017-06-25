@@ -8,14 +8,14 @@ import random  # imports the random module
 guessesTaken = 0  # counter: how many guesses the player took
 
 print('Hello! What is your name?')  # prints this message
-myName = input()  # takes the player's name as an input and sets is to myName variable
+myName = input()  # takes the player's name as an input and assigns it to myName variable
 
 number = random.randint(1, 20)  # generates a random number between 1 - 20
 print('Well, ' + myName + ', I am thinking of a number between 1 and 20.')  # prints this message and the player's name
 
 while guessesTaken < 6:  # creates a loop where the player has five guesses maximum
     print('Take a guess.')  # prints out the message
-    guess = input()  # takes an input and sets it to quess variable
+    guess = input()  # takes an input and assigns it to quess variable
     guess = int(guess)  # converts the input to an integer
 
     guessesTaken += 1  # if guess does not equal number, adds one to guessesTaken
